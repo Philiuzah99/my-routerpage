@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Router clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--sidebar-->
+    <aside class="sidebar">
+        <h2>NF12</h2>
+        <nav>
+            <ul>
+                <li><a href="#" id="summary-link">Summary</a></li>
+                <li><a href="#" id="dhcp-link">DHCP</a></li>
+                <li><a href="#" id="wan-link">WAN</a></li>
+                <li><a href="#" id="lan-link">LAN</a></li>
+                <li><a href="#" id="statistics-link">Statistics</a></li>
+                <li><a href="#" id="Route-link">Route</a></li>
+                <li><a href="#" id="basic-setup">Basic set up</a></li>
+                <li><a href="#" id="advanced-link">Advanced Setup</a></li>
+                <li><a href="#" id="wireless-link">Wireless</a></li>
+                <li><a href="#" id="diagnostic-link">Diagonstic</a></li>
+                <li><a href="#" id="management-link">Management</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <!--Main content-->
+    <main class="content">
+        <header>
+            <h1>NetComm Wireless</h1>
+        </header>
+
+        <!--DHCP Leases section, intially hidden-->
+        <section id="device-info" class="hidden">
+            <h2>Device Info-DHCP Leases</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hostname</th>
+                        <th>MAC Address</th>
+                        <th>IP Address</th>
+                        <th>Expires In</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>DESKTOP-1Server</td>
+                        <td>c8:f1:66:11:30:39</td>
+                        <td>192.168.100.100</td>
+                        <td>14 hours,32 minutes,39 seconds</td>
+                    </tr>
+                    <tr>
+                        <td>Philips-M22</td>
+                        <td>86:ob:3c:87:bb:84</td>
+                        <td>192.168.100.101</td>
+                        <td>20 hours,47 minutes, 7 seconds</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+    </main>
+    <script> src="script.js"></script>
+</body>
+   <footer>
+    <p>&copy NETCOMM Wireless 2024</p>
+   </footer>
+</html>

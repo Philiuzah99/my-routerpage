@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    font-family:Arial,sans-serif;
+    background-color:#f0f0f0;
+    color:#333
+}
+.sidebar{
+    width:200px;
+    background-color:#222;
+    color:white;
+    padding:10px;
+    height:100vh;
+    position:fixed;
+}
+.sidebar h2{
+    color:lightblue;
+    margin-bottom:20px;
+}
+.sidebar ul{
+    list-style-type:none;
+}
+.sidebar ul li{
+    margin:10px 0;
+}
+.sidebar ul li a{
+    text-decoration:none;
+    color:#ccc;
+    display:block;
+    transition:background 0.3s;
+}
+.sidebar ul li a:hover{
+    background-color:#444;
+    color:#fff;
+}
+.content{
+    margin-left:220px;
+    padding:20px;
+    width:100%;
+}
+header h1{
+    color:#007acc;
+    font-size:20px;
+    margin-bottom:20px;
+}
+.device-info h2{
+    font-size:18px;
+    margin-bottom:10px
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    background-color:white;
+}
+table,th,td{
+    border:1px solid #ccc;
+}
+th,td{
+    padding:10px;
+    text-align:left;
+}
+th{
+    background-color:#f4f4f4;
+    color:#333;
+}
+tbody tr:nth-child(even){
+    background-color:#f9f9f9;
+}
+@media(max-width: 768px){
+    .sidebar{
+        width:100px;
+    }
+    .content{
+        margin-left:120px;
+    }
+    table{
+        font-size:14px;
+    }
+}
+footer{
+    clear: both;
+    text-align:center;
+    position:static;
+    width:100%;
+    margin:0 auto;
+}
+    
